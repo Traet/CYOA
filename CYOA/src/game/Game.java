@@ -18,8 +18,9 @@ public class Game {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.getContentPane().setBackground(Color.black);
 		JLabel welcome = new JLabel("CYOA");
+		welcome.setFont(new Font("Serif", Font.PLAIN, 30));
 		welcome.setForeground(Color.white);
-		welcome.setBounds(50,100, 100,30);  
+		welcome.setBounds(350,100, 500,100);  
 		window.add(welcome);
 		window.setLayout(null);
 		window.setVisible(true);
