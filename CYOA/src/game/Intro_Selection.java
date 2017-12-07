@@ -1,12 +1,9 @@
 package game;
 
-<<<<<<< HEAD
 import java.util.Scanner;
 import java.util.Arrays;
-=======
 import java.util.*;
 
->>>>>>> refs/remotes/origin/Albert
 public class Intro_Selection {
 
 //branch 'Albert' of https://github.com/Traet/CYOA.git
