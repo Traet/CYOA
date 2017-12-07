@@ -18,7 +18,7 @@ public class Game {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.getContentPane().setBackground(Color.black);
 		
-		JLabel welcome = new JLabel("CYOA");
+		JLabel welcome = new JLabel("CYOA",SwingConstants.CENTER);
 		welcome.setFont(new Font("Serif", Font.PLAIN, 30));
 		welcome.setForeground(Color.white);
 		welcome.setBounds(350,100, 500,100);  
@@ -26,7 +26,7 @@ public class Game {
 		JButton start = new JButton("Start");
 		start.setFont(new Font("Serif", Font.PLAIN, 20));
 		start.setOpaque(true);
-//		start.setForeground(Color.white);
+		start.setFocusPainted(false);
 		start.setBounds(350,400, 100,30);
 		
 		window.add(welcome);window.add(start);
