@@ -2,7 +2,6 @@ package game;
 
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.List;
 public class Intro_Selection {
 
 	public static void main(String[] args) {
