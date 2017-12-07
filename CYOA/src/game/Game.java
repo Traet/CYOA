@@ -13,7 +13,7 @@ public class Game {
 	}
 	
 	public Game() {
-		//create window
+		//create windows
 		window = new JFrame();
 		window.setSize(800,700);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
