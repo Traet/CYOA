@@ -8,7 +8,7 @@ public class Game {
 	JFrame window;
 
 	public static void main(String[] args) {
-		
+		//test 1
 		new Game();
 	}
 	
