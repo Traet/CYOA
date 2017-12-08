@@ -2,16 +2,18 @@ package game;
 
 public class Character {
 	
-	private String name;
-	private int athl;
-	private int brain;
-	private int art;
+	public String name;
+	public int athl;
+	public int brain;
+	public int art;
+	public String myclass;
 	
-	Character(String a, int b, int c, int d) {
-		this.setPlayer(a, b, c, d);
+	Character(String e, String a, int b, int c, int d) {
+		this.setPlayer(myclass, a, b, c, d);
 	}
 	
-	public void setPlayer(String a, int b, int c, int d) {
+	public void setPlayer(String e, String a, int b, int c, int d) {
+		this.myclass = e;
 		this.name = a;
 		this.athl = b;
 		this.brain = c;
@@ -35,7 +37,7 @@ public class Character {
 	}
 	
 	void whomst() {
-		System.out.println("This is " + name + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
+		System.out.println("This is " + name + ", a " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
 	}
 	
 }
