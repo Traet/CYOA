@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.*;
 public class savefile {
     public static void main(String[] args) {
-        String encoded = "Grunt Li has a massive neck"; 
+        String encoded = "Grunt Li has a massive neck\nSteven IPHO Man"; 
         int offset = 17;
         encoded = encode(encoded, offset);
         save(encoded);
