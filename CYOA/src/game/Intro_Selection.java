@@ -31,6 +31,20 @@ public class Intro_Selection {
 		String myclass = classes[myclass_num - 1];
 		System.out.println("You\'re a " + myclass + "!");
 		
+		//fill this in later
+		switch (myclass) {
+		case "Normie": 
+			
+		case "Baller":
+			
+		case "3rd Floor Man":
+			
+		case "Show Enthusiast":
+			
+		case "DECA Man":
+			
+		}
+		
 		/*String firstchar_myclass = myclass.substring(0,1);
 		String rest_myclass = myclass.substring(1, myclass.length());
 		myclass = firstchar_myclass.toUpperCase() + rest_myclass;
