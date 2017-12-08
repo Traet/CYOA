@@ -7,15 +7,21 @@ Attempt 1: Create a text file with all of the information and then encrypt it.
             Encryption success!
 */
 import java.io.*;
-import java.util.*;
+import java.util.*; 
+
+//main class 
 public class savefile {
     public static void main(String[] args) {
         //We will have to concatenate the Strings use \n between each different string.
-        String encoded = "Grunt Li has a massive neck\nSteven IPHO Man"; 
-        int offset = 17;
-        encoded = encode(encoded, offset);
+        String encoded = "Grunt Li has a long ass neck\nSteven IPHO Man\nThe flattest planatiarien\nChiu is a fuck boy"; 
+        int offset = 5;
+        encoded = encode(encoded, offset); 
+        String decode = decode(encoded, offset);
         save(encoded);
+        //save(decode);
     }
+
+    //Creating and writing a save file
     public static void save(String encoded)
     {
         BufferedWriter output = null;
@@ -28,6 +34,8 @@ public class savefile {
             e.printStackTrace();
         } 
     }
+    
+    //Encoding
     public static String encode(String encode, int offset) {
         offset = offset % 26 + 26;
         StringBuilder encoded = new StringBuilder();
@@ -44,4 +52,9 @@ public class savefile {
         }
         return encoded.toString();
     }
+
+    //Decoding 
+    /*public static String decode(String encode, int offset) {
+        return encode(encode, 26-offset);
+    }*/
 }
