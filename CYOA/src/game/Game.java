@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class Game {
+	//Initialize
 	
 	JFrame window;
 	Container con;
@@ -62,10 +63,11 @@ public class Game {
 
 	}
 	public void createGameScreen() {
-		
+		//Make title and start button invisible
 		titlePanel.setVisible(false);
 		startPanel.setVisible(false);
 		
+		//Main Text Area
 		mainPanel = new JPanel();
 		mainPanel.setBounds(100, 100, 600, 250);
 		mainPanel.setBackground(Color.blue);
@@ -79,26 +81,33 @@ public class Game {
 		mainTextArea.setLineWrap(true);
 		mainPanel.add(mainTextArea);
 		
+		//choice panel
 		choicePanel = new JPanel();
 		choicePanel.setBounds(250,350,300,150);
 		choicePanel.setBackground(Color.red);
 		choicePanel.setLayout(new GridLayout(3,1));
 		con.add(choicePanel);
 		
+
 		choice1 = new JButton("Choice 1");
 		choice1.setBackground(Color.black);
 		choice1.setForeground(Color.white);
+		choice1.setFocusPainted(false);
 		choice1.setFont(normalFont);
 		choicePanel.add(choice1);
+		
 		choice2 = new JButton("Choice 2");
 		choice2.setBackground(Color.black);
 		choice2.setForeground(Color.white);
 		choice2.setFont(normalFont);
+		choice2.setFocusPainted(false);
+		
 		choicePanel.add(choice2);
 		choice3 = new JButton("Choice 3");
 		choice3.setBackground(Color.black);
 		choice3.setForeground(Color.white);
 		choice3.setFont(normalFont);
+		choice3.setFocusPainted(false);
 		choicePanel.add(choice3);
 		
 	}
