@@ -11,14 +11,15 @@ import java.util.*;
 public class savefile {
     public static void main(String[] args) {
         String encoded = "Grunt Li has a massive neck"; 
-        encoded = encode(encoded, 17);
+        int offset = 17;
+        encoded = encode(encoded, offset);
         save(encoded);
     }
     public static void save(String encoded)
     {
         BufferedWriter output = null;
         try {
-            File file = new File("example.txt");
+            File file = new File("Save_File.txt");
             output = new BufferedWriter(new FileWriter(file));
             output.write(encoded);
             output.close();
