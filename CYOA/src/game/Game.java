@@ -7,9 +7,10 @@ public class Game {
 	
 	JFrame window;
 	Container con;
-	JPanel titlePanel, startPanel;
+	JPanel titlePanel, startPanel, mainPanel;
 	JLabel titleLabel;
 	JButton startButton;
+	JTextArea mainTextArea;
 	Font titleFont = new Font("Times New Roman",Font.PLAIN, 90);
 	Font normalFont = new Font("Times New Roman", Font.PLAIN,28);
 	
@@ -53,5 +54,20 @@ public class Game {
 		con.add(titlePanel);
 		con.add(startPanel);
 
+	}
+	public void createScreen() {
+		mainPanel = new JPanel();
+		mainPanel.setBounds(100, 100, 600, 250);
+		mainPanel.setBackground(Color.blue);
+		con.add(mainPanel);
+		
+		mainTextArea = new JTextArea();
+		mainTextArea.setBounds(100,100,600,250);
+		mainTextArea.setBackground(Color.black);
+		mainTextArea.setForeground(Color.white);
+		mainTextArea.setFont(normalFont);
+		mainTextArea.setLineWrap(true);
+		mainPanel.add(mainTextArea);
+		
 	}
 }
