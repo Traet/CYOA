@@ -35,7 +35,7 @@ public class Character {
 	}
 	
 	void whomst() {
-		System.out.println("This is " + name + ". His/her athleticism, brains, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
+		System.out.println("This is " + name + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
 	}
 	
 }
