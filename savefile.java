@@ -10,6 +10,7 @@ import java.io.*;
 import java.util.*;
 public class savefile {
     public static void main(String[] args) {
+        //We will have to concatenate the Strings use \n between each different string.
         String encoded = "Grunt Li has a massive neck\nSteven IPHO Man"; 
         int offset = 17;
         encoded = encode(encoded, offset);
