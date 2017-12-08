@@ -9,7 +9,7 @@ public class Character {
 	public String myclass;
 	
 	Character(String e, String a, int b, int c, int d) {
-		this.setPlayer(myclass, a, b, c, d);
+		this.setPlayer(e, a, b, c, d);
 	}
 	
 	public void setPlayer(String e, String a, int b, int c, int d) {
