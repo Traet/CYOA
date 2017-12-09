@@ -2,26 +2,30 @@ package game;
 
 public class Character {
 	
-	public String name;
 	public int athl;
 	public int brain;
 	public int art;
 	public String myclass;
+	public String aspiration;
 	
-	Character(String e, String a, int b, int c, int d) {
-		this.setPlayer(e, a, b, c, d);
+	Character(){
+		
 	}
 	
-	public void setPlayer(String e, String a, int b, int c, int d) {
+	Character(String a, String e, int b, int c, int d) {
+		this.setPlayer(a, e, b, c, d);
+	}
+	
+	public void setPlayer(String a, String e, int b, int c, int d) {
 		this.myclass = e;
-		this.name = a;
+		this.aspiration = a;
 		this.athl = b;
 		this.brain = c;
 		this.art = d;
 	}
 	
-	public void setName(String a) {
-		this.name = a;
+	public void setAspiration(String a) {
+		this.aspiration = a;
 	}
 	
 	public void setAthl(int b) {
@@ -37,7 +41,7 @@ public class Character {
 	}
 	
 	void whomst() {
-		System.out.println("This is " + name + ", a " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
+		System.out.println("This is a " + aspiration + " " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
 	}
 	
 }

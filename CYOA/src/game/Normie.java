@@ -1,27 +1,13 @@
 package game;
 
-public class Normie {
+class Normie extends Character {
 	
-	int athl;
-	int brain;
-	int art;
-	
-	Normie(){
-		athl = 0;
-		brain = 0;
-		art = 0;
-	}
-	
-	public void setAthl(int a) {
-		this.athl = a;
-	}
-	
-	public void setBrain(int b) {
-		this.brain = b;
-	}
-	
-	public void setArt(int c) {
-		this.art = c;
+	public Normie(String aspiration) {
+		this.aspiration = aspiration;
+		this.myclass = "Normie";
+		this.athl = 1;
+		this.brain = 1;
+		this.art = 1;
 	}
 	
 }
