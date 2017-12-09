@@ -1,6 +1,6 @@
-package game;
+package players;
 
-class Normie extends Character {
+public class Normie extends Character {
 	
 	public Normie(String aspiration) {
 		this.aspiration = aspiration;

@@ -1,5 +1,8 @@
 package game;
 
+import players.Character;
+import players.Normie;
+
 public class Testing_Space {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package game;
+package players;
 
 public class Character {
 	
@@ -8,11 +8,11 @@ public class Character {
 	public String myclass;
 	public String aspiration;
 	
-	Character(){
+	public Character(){
 		
 	}
 	
-	Character(String a, String e, int b, int c, int d) {
+	public Character(String a, String e, int b, int c, int d) {
 		this.setPlayer(a, e, b, c, d);
 	}
 	
@@ -40,7 +40,7 @@ public class Character {
 		this.art = d;
 	}
 	
-	void whomst() {
+	public void whomst() {
 		System.out.println("This is a " + aspiration + " " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
 	}
 	
