@@ -24,6 +24,16 @@ public class Character {
 		this.art = d;
 	}
 	
+	public void setStats(int b, int c, int d) {
+		this.athl = b;
+		this.brain = c;
+		this.art = d;
+	}
+	
+	public void setMyclass(String e) {
+		this.myclass = e;
+	}
+	
 	public void setAspiration(String a) {
 		this.aspiration = a;
 	}

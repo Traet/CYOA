@@ -2,6 +2,7 @@ package game;
 
 import java.util.Scanner;
 import java.util.Arrays;
+import players.Character;
 
 public class Intro_Selection {
 
@@ -10,16 +11,10 @@ public class Intro_Selection {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("What's your name?" );
-		String username = scan.nextLine();
+		System.out.println("Hello there! \n");
 		
-		String firstchar_username = username.substring(0,1);
-		String rest_username = username.substring(1, username.length());
-		username = firstchar_username.toUpperCase() + rest_username;
-		System.out.println("Oh, hi " + username + "!\n");
-		
-		System.out.println("Pick a class! Use number to refer to your selection, i.e. 1 = Normie, 2 = Baller, etc.");
-		String[] classes = {"Normie", "Baller", "3rd Floor Man", "SHOW Enthusiast", "DECA Man"};
+		System.out.println("Pick a class! Use a number to refer to your selection, i.e. 1 = Normie, 2 = Baller, etc.");
+		String[] classes = {"Normie", "Baller", "3rd Floor Man", "SHOW Enthusiast", "DECA Dude"};
 		System.out.println(Arrays.toString(classes));
 		int myclass_num = scan.nextInt();
 		
@@ -28,22 +23,43 @@ public class Intro_Selection {
 			myclass_num = scan.nextInt();
 		}
 		
-		String myclass = classes[myclass_num - 1];
-		System.out.println("You\'re a " + myclass + "!");
+		System.out.println("Select an aspiration! Again, use numbers to refer to your choice.");
+		String[] asps = {"Wharton", "Harvard", "UofT", "McGill", "Uninspired"};
+		System.out.println(Arrays.toString(asps));
+		int myasp_num = scan.nextInt();
 		
-		//fill this in later
+		while ((myasp_num > 5) || (myasp_num < 1)){
+			System.out.println("Pick a valid aspiration.");
+			myasp_num = scan.nextInt();
+		}
+		
+		String myclass = classes[myclass_num - 1];
+		String myasp = asps[myasp_num - 1];
+		
+		Character player = new Character();
+		player.setMyclass(myclass);
+		player.setAspiration(myasp);
+				
 		switch (myclass) {
 		case "Normie": 
-			
+			player.setStats(1, 1, 1);
+			break;
 		case "Baller":
-			
+			player.setStats(3, 0, 0);
+			break;
 		case "3rd Floor Man":
-			
-		case "Show Enthusiast":
-			
-		case "DECA Man":
-			
+			player.setStats(0, 3, 0);
+			break;
+		case "SHOW Enthusiast":
+			player.setStats(1, 0, 2);
+			break;
+		case "DECA Dude":
+			player.setStats(0, 2, 1);
+			break;
 		}
+		
+		player.whomst();
+					
 		
 		/*String firstchar_myclass = myclass.substring(0,1);
 		String rest_myclass = myclass.substring(1, myclass.length());
