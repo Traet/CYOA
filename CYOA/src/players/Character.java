@@ -8,10 +8,8 @@ public class Character {
 	public String myclass;
 	public String aspiration;
 	
-	public Character(int a,int b, int c){
-		athl = a;
-		brain = b;
-		art = c;
+	public Character(){
+		
 	}
 	
 	public Character(String a, String e, int b, int c, int d) {
@@ -50,6 +48,10 @@ public class Character {
 	
 	public void setArt(int d) {
 		this.art = d;
+	}
+	
+	public void getStats() {
+		return 
 	}
 	
 	public void whomst() {

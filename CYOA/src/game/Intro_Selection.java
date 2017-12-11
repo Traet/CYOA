@@ -17,7 +17,7 @@ public class Intro_Selection {
 		String[] classes = {"Normie", "Baller", "3rd Floor Man", "SHOW Enthusiast", "DECA Dude"};
 		System.out.println(Arrays.toString(classes));
 		int myclass_num = scan.nextInt();
-		
+	
 		while ((myclass_num > 5) || (myclass_num < 1)){
 			System.out.println("Pick a valid class.");
 			myclass_num = scan.nextInt();
@@ -55,6 +55,11 @@ public class Intro_Selection {
 			break;
 		case "DECA Dude":
 			player.setStats(0, 2, 1);
+			break;
+		}
+		switch (myasp) {
+		case "Wharton": 
+			player.setStats(1, 1, 1);
 			break;
 		}
 		
