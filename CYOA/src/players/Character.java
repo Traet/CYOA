@@ -8,8 +8,10 @@ public class Character {
 	public String myclass;
 	public String aspiration;
 	
-	public Character(){
-		
+	public Character(int a,int b, int c){
+		athl = a;
+		brain = b;
+		art = c;
 	}
 	
 	public Character(String a, String e, int b, int c, int d) {
