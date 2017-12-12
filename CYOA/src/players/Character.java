@@ -2,11 +2,11 @@ package players;
 
 public class Character {
 	
-	public int athl;
-	public int brain;
-	public int art;
-	public String myclass;
-	public String aspiration;
+	protected int athl;
+	protected int brain;
+	protected int art;
+	String myclass;
+	String aspiration;
 	
 	public Character(){
 		
@@ -51,7 +51,7 @@ public class Character {
 	}
 	
 	public void whomst() {
-		System.out.println("This is a " + aspiration + " " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
+		System.out.println("You are a " + aspiration + " " + myclass + ". His/her athleticism, brain, and art stats are " + athl + ", " + brain + ", and " + art + ", respectively.");
 	}
 	
 }

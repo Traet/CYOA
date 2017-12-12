@@ -59,7 +59,9 @@ public class Intro_Selection {
 		}
 		
 		player.whomst();
-					
+		String username = myasp + " " + myclass;
+		
+		System.out.println("\nAre you ready for your first adventure?");			
 		
 		/*String firstchar_myclass = myclass.substring(0,1);
 		String rest_myclass = myclass.substring(1, myclass.length());
